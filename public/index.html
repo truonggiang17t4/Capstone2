@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Capstone2</title>
+</head>
+
+<body>
+  <div class="wrapper w-[1500px] m-auto p-[25px] bg-[#F6FAFF] flex font-OpenSans-regular">
+    <!-- Container -->
+    <div class="container bg-white">
+
+      <!-- Header -->
+      <header class="border-b-4 border-[#F6F6F6]">
+        <nav class="navbar flex justify-between items-center px-[50px]">
+          <h1 class="logo pt-4">
+            <a href="javascript:void(0)">
+              <img src="../src/assets/images/Logo_ISE_fullHD.svg" alt="The logo of Image Search Engine ">
+            </a>
+          </h1>
+          <div class="flex gap-6">
+            <button type="button" class="w-[100px] h-[40px] font-OpenSans-bold font-medium text-lg flex justify-center
+              items-center border-2 bg-[#51459E] p-[9px] rounded-[10px] text-[#DEE1E6]
+              hover:bg-[#DEE1E6] hover:text-[#51459E] hover:border-[#51459E]
+              transition-all duration-500 ease-in-out uppercase">Sign
+              in</button>
+            <button type="button" class="w-[100px] h-[40px] font-OpenSans-bold font-medium text-lg flex justify-center
+              items-center border-2 bg-[#DEE1E6] p-[9px] rounded-[10px] text-[#51459E]
+              hover:bg-[#51459E]  hover:text-[#DEE1E6] hover:border-[#DEE1E6]
+              transition-all duration-500 ease-in-out uppercase">Sign
+              up</button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Content -->
+      <div class="content flex my-6">
+        <div class="side-menu flex flex-col w-[22%] h-full justify-center items-center border-r-2 border-[#F6F6F6]">
+          <div class="dashboard-button w-[50px] h-[50px] bg-[#ECEFF7] transition-all duration-300 ease-in-out
+          hover:scale-125 rounded-[10px] flex justify-center items-center">
+            <button class="p-[15px]">
+              <img src=" ../src/assets/images/Dashboard_Icon.svg" class="bg-[#51459E] rounded-sm">
+            </button>
+          </div>
+          <span class="m-[15px] font-OpenSans-bold font-semibold text-[#1C295D]">Dashboard</span>
+          <div class="recent-button w-[50px] h-[50px] bg-[#ECEFF7] transition-all duration-300 ease-in-out
+          hover:scale-125 rounded-[10px] flex justify-center items-center">
+            <button class="p-[15px]">
+              <img src=" ../src/assets/images/Recent_Icon.svg">
+            </button>
+          </div>
+          <span class="m-[15px] font-OpenSans-bold font-semibold text-[#1C295D]">Recent</span>
+          <div class="favorites-button w-[50px] h-[50px] bg-[#ECEFF7] transition-all duration-300 ease-in-out
+          hover:scale-125 rounded-[10px] flex justify-center items-center">
+            <button class="p-[15px]">
+              <img src=" ../src/assets/images/Favorites_Icon.svg">
+            </button>
+          </div>
+          <span class="m-[15px] font-OpenSans-bold font-semibold text-[#1C295D]">Favorites</span>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content w-full mx-10">
+
+          <!-- Uoload image section -->
+          <section class="upload-image-section bg-[#F6F5FF] flex rounded-xl py-[50px]
+          justify-center items-center drop-shadow-lg">
+            <div class="flex flex-col items-center text-center">
+              <h2 class="label text-[#51459E] font-OpenSans-bold font-bold text-3xl">Image Search Engine</h2>
+              <p class="guide my-[28px] text-[#7987A5] font-OpenSans-bold font-semibold text-xl">
+                Welcome to ISE's product search engine.<br>
+                To start your search, please click the Upload Image button below.
+              </p>
+              <button type="button" class="w-[200px] h-[40px] font-OpenSans-bold font-medium text-lg flex justify-center
+              items-center border-2 bg-[#51459E] p-5 rounded-[10px] text-[#DEE1E6]
+              hover:bg-[#DEE1E6] hover:text-[#51459E] hover:border-[#51459E]
+              transition-all duration-500 ease-in-out uppercase">upload image</button>
+            </div>
+          </section>
+
+          <!-- Display image section -->
+          <section class="display-image-section flex mt-10 mb-5 w-full h-[220px] justify-between drop-shadow-lg">
+            <div class="w-[250px] transition-all duration-300 ease-in-out
+            hover:scale-110">
+              <img src="/src/assets/images/image.png" class="w-[250px]">
+              <i class="fa-solid fa-ellipsis-vertical text-4xl w-full flex
+                justify-end px-4 relative top-[-200px] text-[#3734A9]"></i>
+            </div>
+            <div class="w-[250px] transition-all duration-300 ease-in-out
+            hover:scale-110">
+              <img src="/src/assets/images/image.png" class="w-[250px]">
+              <i class="fa-solid fa-ellipsis-vertical text-4xl w-full flex
+                justify-end px-4 relative top-[-200px] text-[#3734A9]"></i>
+            </div>
+            <div class="w-[250px] transition-all duration-300 ease-in-out
+            hover:scale-110">
+              <img src="/src/assets/images/image.png" class="w-[250px]">
+              <i class="fa-solid fa-ellipsis-vertical text-4xl w-full flex
+                justify-end px-4 relative top-[-200px] text-[#3734A9]"></i>
+            </div>
+            <div class="w-[250px] transition-all duration-300 ease-in-out
+            hover:scale-110">
+              <img src="/src/assets/images/image.png" class="w-[250px]">
+              <i class="fa-solid fa-ellipsis-vertical text-4xl w-full flex
+                justify-end px-4 relative top-[-200px] text-[#3734A9]"></i>
+            </div>
+          </section>
+
+          <!-- Quick accesss section -->
+          <section class="quick-access-section flex flex-col mt-0 w-full justify-between drop-shadow-lg">
+            <h2 class="font-OpenSans-medium font-bold italic text-3xl mt-0 mb-5 mx-2 text-[#505887]">Quick Access</h2>
+            <div class="flex w-full justify-between">
+              <div class="w-[250px] transition-all duration-300 ease-in-out border-4
+              hover:border-[#51459E] bg-[#F5F5F5] rounded-3xl">
+                <img src="/src/assets/images/image.png"
+                  class="w-full border-[#DEE1E6] border-b-4 transition-all duration-300 ease-in-out hover:border-[#51459E]">
+                <div class="infor-image flex justify-center items-center w-full py-2">
+                  <i class="fa-regular fa-image text-4xl text-[#21A345] pr-3"></i>
+                  <span class="name-image text-lg font-OpenSans-bold font-bold text-[#25396F]">Image_1.jpeg</span>
+                </div>
+              </div>
+              <div class="w-[250px] transition-all duration-300 ease-in-out border-4
+            hover:border-[#51459E] bg-[#F5F5F5] rounded-3xl">
+                <img src="/src/assets/images/image.png"
+                  class="w-full border-[#DEE1E6] border-b-4 transition-all duration-300 ease-in-out hover:border-[#51459E]">
+                <div class="infor-image flex justify-center items-center w-full py-2">
+                  <i class="fa-regular fa-image text-4xl text-[#21A345] pr-3"></i>
+                  <span class="name-image text-lg font-OpenSans-bold font-bold text-[#25396F]">Image_1.jpeg</span>
+                </div>
+              </div>
+              <div class="w-[250px] transition-all duration-300 ease-in-out border-4
+          hover:border-[#51459E] bg-[#F5F5F5] rounded-3xl">
+                <img src="/src/assets/images/image.png"
+                  class="w-full border-[#DEE1E6] border-b-4 transition-all duration-300 ease-in-out hover:border-[#51459E]">
+                <div class="infor-image flex justify-center items-center w-full py-2">
+                  <i class="fa-regular fa-image text-4xl text-[#21A345] pr-3"></i>
+                  <span class="name-image text-lg font-OpenSans-bold font-bold text-[#25396F]">Image_1.jpeg</span>
+                </div>
+              </div>
+              <div class="w-[250px] transition-all duration-300 ease-in-out border-4
+              hover:border-[#51459E] bg-[#F5F5F5] rounded-3xl">
+                <img src="/src/assets/images/image.png"
+                  class="w-full border-[#DEE1E6] border-b-4 transition-all duration-300 ease-in-out hover:border-[#51459E]">
+                <div class="infor-image flex justify-center items-center w-full py-2">
+                  <i class="fa-regular fa-image text-4xl text-[#21A345] pr-3"></i>
+                  <span class="name-image text-lg font-OpenSans-bold font-bold text-[#25396F]">Image_1.jpeg</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Recently uploaded and Favorite products section -->
+          <div class="my-[30px] w-full flex justify-between">
+
+            <!-- Recently uploaded section -->
+            <div class="recently-uploaded-section w-[40%]">
+              <h2 class="font-OpenSans-medium font-bold italic text-3xl mt-0 mb-5 mx-2 text-[#505887]">Recent Uploaded
+              </h2>
+              <div class="detail-recently-uploaded-section px-5 border-4 rounded-xl border-white
+                transition-all duration-300 ease-in-out hover:bg-[#eaebee] py-2 my-4">
+                <div class="flex w-full justify-between items-center">
+                  <div class="product-image border-4 border-[#DEE1E6] rounded-xl">
+                    <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
+                  </div>
+                  <div class="product-infor w-1/2 flex flex-col">
+                    <span class="name-product font-OpenSans-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="time-upload font-OpenSans-medium text-[#718EBF] text-xl">4 Sep,
+                      10:23pm</span>
+                  </div>
+                  <span class="size-image font-OpenSans-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                </div>
+              </div>
+              <div class="detail-recently-uploaded-section px-5 border-4 rounded-xl border-white
+              transition-all duration-300 ease-in-out hover:bg-[#eaebee] py-2 my-4">
+                <div class="flex w-full justify-between items-center">
+                  <div class="product-image border-4 border-[#DEE1E6] rounded-xl">
+                    <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
+                  </div>
+                  <div class="product-infor w-1/2 flex flex-col">
+                    <span class="name-product font-OpenSans-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="time-upload font-OpenSans-medium text-[#718EBF] text-xl">4 Sep,
+                      10:23pm</span>
+                  </div>
+                  <span class="size-image font-OpenSans-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                </div>
+              </div>
+              <div class="detail-recently-uploaded-section px-5 border-4 rounded-xl border-white
+            transition-all duration-300 ease-in-out hover:bg-[#eaebee] py-2 my-4">
+                <div class="flex w-full justify-between items-center">
+                  <div class="product-image border-4 border-[#DEE1E6] rounded-xl">
+                    <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
+                  </div>
+                  <div class="product-infor w-1/2 flex flex-col">
+                    <span class="name-product font-OpenSans-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="time-upload font-OpenSans-medium text-[#718EBF] text-xl">4 Sep,
+                      10:23pm</span>
+                  </div>
+                  <span class="size-image font-OpenSans-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                </div>
+              </div>
+              <div class="detail-recently-uploaded-section px-5 border-4 rounded-xl border-white
+          transition-all duration-300 ease-in-out hover:bg-[#eaebee] py-2 my-4">
+                <div class="flex w-full justify-between items-center">
+                  <div class="product-image border-4 border-[#DEE1E6] rounded-xl">
+                    <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
+                  </div>
+                  <div class="product-infor w-1/2 flex flex-col">
+                    <span class="name-product font-OpenSans-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="time-upload font-OpenSans-medium text-[#718EBF] text-xl">4 Sep,
+                      10:23pm</span>
+                  </div>
+                  <span class="size-image font-OpenSans-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                </div>
+              </div>
+              <div class="detail-recently-uploaded-section px-5 border-4 rounded-xl border-white
+        transition-all duration-300 ease-in-out hover:bg-[#eaebee] py-2 my-4">
+                <div class="flex w-full justify-between items-center">
+                  <div class="product-image border-4 border-[#DEE1E6] rounded-xl">
+                    <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
+                  </div>
+                  <div class="product-infor w-1/2 flex flex-col">
+                    <span class="name-product font-OpenSans-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="time-upload font-OpenSans-medium text-[#718EBF] text-xl">4 Sep,
+                      10:23pm</span>
+                  </div>
+                  <span class="size-image font-OpenSans-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Favorite products section -->
+            <div class="favorite-products-section w-full h-full flex flex-col items-end">
+              <div class="favorite-product-title flex w-1/2 justify-between">
+                <h2 class="font-OpenSans-medium font-bold italic text-3xl mt-0 mb-5 mx-2 text-[#505887]">
+                  Favorite Products
+                </h2>
+                <i class="fa-solid fa-ellipsis pt-2"></i>
+              </div>
+              <div class="favorite-product-detail w-full flex flex-col items-end">
+                <div class="grid grid-cols-2 gap-5 w-1/2">
+                  <div class="favorite-product-image flex justify-center rounded-xl overflow-hidden
+                  w-full transition-all duration-300 ease-in-out hover:scale-110">
+                    <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[250px]">
+                  </div>
+                  <div class="favorite-product-image flex justify-center rounded-xl overflow-hidden
+                  w-full transition-all duration-300 ease-in-out hover:scale-110">
+                    <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[250px]">
+                  </div>
+                  <div class="favorite-product-image flex justify-center rounded-xl overflow-hidden
+                  w-full transition-all duration-300 ease-in-out hover:scale-110">
+                    <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[250px]">
+                  </div>
+                  <div class="favorite-product-image flex justify-center rounded-xl overflow-hidden
+                  w-full transition-all duration-300 ease-in-out hover:scale-110">
+                    <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[250px]">
+                  </div>
+                </div>
+                <div class="w-full flex my-5 mr-24 justify-end">
+                  <button type="button" class="w-[200px] h-[40px] font-OpenSans-bold font-medium text-lg flex justify-center
+                  items-center border-2 bg-[#51459E] p-5 rounded-[10px] text-[#DEE1E6]
+                  hover:bg-[#DEE1E6] hover:text-[#51459E] hover:border-[#51459E]
+                  transition-all duration-500 ease-in-out uppercase">See more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+  </div>
+  <script type=" module" src="../src/javascript/main.js"></script>
+</body>
+
+</html>
