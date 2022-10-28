@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'OpenSans-regular': ['OpenSans-Regular'],
-        'OpenSans-medium': ['OpenSans-Medium'],
-        'OpenSans-bold': ['OpenSans-Bold'],
-        'OpenSans-light': ['OpenSans-Light'],
+        'Primary-regular': ['Primary-Regular'],
+        'Primary-medium': ['Primary-Medium'],
+        'Primary-bold': ['Primary-Bold'],
+        'Primary-light': ['Primary-Light'],
       },
     },
   },
