@@ -1,4 +1,4 @@
-# Capstone 2 Project
+# Capstone 2 Project: Image Search Engine
 
 ## Overview
 
@@ -11,11 +11,12 @@
 ## Technical
 
 - HTML5
+- Javascript
 - Tailwind CSS
 
 ## Timeline
 
-- 10 days ( 2022/10/05 – 2022/10/18 )
+- 2022/08/20 – 2022/12/10
 
 ## Teamsize
 
@@ -26,14 +27,13 @@
 **Step one:** Clone the code folder from GitLab to your device
 
 - Choose a path to save that file => At that path open the command window
+
 - Run command
-  > `git clone https://github.com/truonggiang17t4/Capstone2.git`
+  > `git clone https://github.com/truonggiang17t4/Image-Search-Engine.git`
 
 **Step two:** Run project
 
-- Change the path to the folder you just cloned to your computer
-
-  > `cd Capstone2`
+- Open the folder you just cloned to your computer
 
 - Install the npm dependencies
 
