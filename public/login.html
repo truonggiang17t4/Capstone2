@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  <div class="wrapper bg-cover min-h-screen m-auto flex font-Primary-regular signUpBackground">
+  <div class="wrapper bg-cover w-full max-w-[1500px] h-[700px] m-auto flex font-Primary-regular signUpBackground">
     <!-- Container -->
-    <div class="container w-full flex">
+    <div class="container w-full h-full flex">
 
       <!-- The overview section -->
-      <div class="overview w-1/2 h-full pt-20 flex flex-col justify-start items-center">
+      <div class="overview w-1/2 h-full pt-14 flex flex-col justify-start items-center">
         <span class="font-Primary-bold text-2xl text-white">NEW HERE ?</span>
         <p w class="w-[60%] mt-3 mb-7 flex text-center font-Primary-bold text-lg tracking-wider text-white">
           ISE helps you search for the product according to the image you provide most accurately</p>
@@ -37,12 +37,12 @@
         <!-- End the form login title -->
 
         <!-- Form -->
-        <form method="get" class="form-group flex flex-col w-full px-40 mt-10 mb-4">
+        <form method="get" class="form-group flex flex-col w-full px-40 mt-10 mb-2">
 
           <!-- The email field -->
           <label htmlFor="email" class="email-label w-full p-2 mb-6 bg-[#D9D9D9] rounded-2xl overflow-hidden">
             <input type="email" id="email"
-              class="email-input-field w-full px-3 text-xl font-Primary-bold outline-none placeholder-black bg-[#D9D9D9]"
+              class="email-input-field w-full px-3 text-xl font-Primary-medium outline-none placeholder-slate-800 bg-[#D9D9D9]"
               placeholder="Email" required />
           </label>
           <!-- End the email field -->
@@ -50,7 +50,7 @@
           <!-- The password field -->
           <label htmlFor="password" class="password-label w-full p-2 mb-6 bg-[#D9D9D9] rounded-2xl overflow-hidden">
             <input type="password" id="password"
-              class="password-input-field w-full px-3 text-xl font-Primary-bold outline-none placeholder-black bg-[#D9D9D9]"
+              class="password-input-field w-full px-3 text-xl font-Primary-medium outline-none placeholder-slate-800 bg-[#D9D9D9]"
               placeholder="Password" required />
           </label>
           <!-- End the password field -->
@@ -59,7 +59,7 @@
         <!-- Form -->
 
         <!-- Button submit form -->
-        <button onclick="login()" id="loginButton" class="w-[150px] h-[40px] font-Primary-bold font-medium text-2xl flex justify-center
+        <button onclick="login()" id="loginButton" class="w-[150px] h-[50px] font-Primary-bold text-2xl flex justify-center
               items-center border-2 bg-[#51459E] p-[9px] rounded-3xl text-[#DEE1E6]
               hover:bg-[#DEE1E6] hover:text-[#51459E] hover:border-[#51459E]
               transition-all duration-500 ease-in-out uppercase">

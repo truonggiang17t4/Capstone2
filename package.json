@@ -12,6 +12,7 @@
     "prettier:fix": "prettier --write \"src/**(**.jsx|*.js|*.scss|*.css)\""
   },
   "dependencies": {
+    "parcel": "^2.8.0",
     "prettier": "^2.7.1"
   },
   "devDependencies": {
