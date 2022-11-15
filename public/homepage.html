@@ -19,7 +19,7 @@
       <header class="border-b-4 border-[#F6F6F6]">
 
         <!-- Navbar -->
-        <nav class="navbar flex justify-between items-center px-[50px]">
+        <nav class="navbar flex justify-between items-center px-[50px] relative">
 
           <!-- The logo of page -->
           <h1 class="logo pt-4">
@@ -31,12 +31,18 @@
 
           <!-- The information of the user -->
           <div class="infor-user flex gap-6 justify-center items-center">
-            <div class="avtar-user w-[60px] h-[60px] hover:scale-125 transition-all duration-500 ease-in-out">
+            <div class="avtar-user w-[60px] h-[60px]">
               <img src="../src/assets/images/cat.jpg" alt="The Avatar" class="w-[60px] h-[60px] rounded-full">
             </div>
-            <div class="detail-infor-user flex flex-col h-full">
-              <span class="font-Primary-bold text-[#25396F] text-xl font-bold">User Name</span>
-              <span class="font-Primary-bold text-[#7C8DB5] text-lg font-semibold">user@gmail.com</span>
+            <div>
+              <div class="detail-infor-user flex flex-col h-full relative">
+                <span class="font-Primary-bold text-[#25396F] text-xl">Username</span>
+                <span class="font-Primary-bold text-[#7C8DB5] text-lg">user@gmail.com</span>
+              </div>
+              <div
+                class="py-2 px-4 bg-slate-200 top-[100px] z-10 absolute w-40 rounded-md font-Primary-medium opacity-0 hover:opacity-100 transition-all duration-500 ease-in-out">
+                Logout
+              </div>
             </div>
           </div>
           <!-- End the information of the user -->
@@ -48,7 +54,7 @@
       <!-- End the header -->
 
       <!-- Page content -->
-      <div class="content flex my-6">
+      <div class=" content flex my-6">
 
         <!-- Side menu section -->
         <div class="side-menu flex flex-col w-[22%] h-full justify-center items-center border-r-2 border-[#F6F6F6]">
@@ -94,7 +100,7 @@
           justify-center items-center drop-shadow-lg">
             <div class="flex flex-col items-center text-center">
               <h2 class="label text-[#51459E] font-Primary-bold font-bold text-3xl">Image Search Engine</h2>
-              <p class="guide my-[28px] text-[#7987A5] font-Primary-bold font-semibold text-xl">
+              <p class="guide my-[28px] text-[#7987A5] font-Primary-medium text-xl">
                 Welcome to ISE's product search engine.<br>
                 To start your search, please click the Upload Image button below.
               </p>
@@ -170,7 +176,8 @@
             <div class="recently-uploaded-section w-[40%]">
 
               <!-- Recently uploaded section title -->
-              <h2 class="font-Primary-medium font-bold italic text-2xl mt-0 mb-5 mx-2 text-[#505887]">Recent Uploaded
+              <h2 class="font-Primary-bold italic text-2xl mt-0 mb-5 mx-2 text-[#505887]">Recent
+                Uploaded
               </h2>
               <!-- End the recently uploaded section title -->
 
@@ -182,11 +189,12 @@
                     <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
                   </div>
                   <div class="product-infor w-1/2 flex flex-col">
-                    <span class="name-product font-Primary-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="name-product font-Primary-bold text-[#505887] text-xl">Image
+                      Test</span>
                     <span class="time-upload font-Primary-medium text-[#718EBF] text-xl">4 Sep,
                       10:23pm</span>
                   </div>
-                  <span class="size-image font-Primary-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                  <span class="size-image font-Primary-medium text-[#718EBF] text-xl">12 MB</span>
                 </div>
               </div>
               <!-- End the detail recently uploaded section -->
@@ -198,11 +206,12 @@
                     <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
                   </div>
                   <div class="product-infor w-1/2 flex flex-col">
-                    <span class="name-product font-Primary-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="name-product font-Primary-bold text-[#505887] text-xl">Image
+                      Test</span>
                     <span class="time-upload font-Primary-medium text-[#718EBF] text-xl">4 Sep,
                       10:23pm</span>
                   </div>
-                  <span class="size-image font-Primary-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                  <span class="size-image font-Primary-medium text-[#718EBF] text-xl">12 MB</span>
                 </div>
               </div>
               <div class="detail-recently-uploaded-section px-5 border-4 rounded-xl border-white
@@ -212,11 +221,12 @@
                     <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
                   </div>
                   <div class="product-infor w-1/2 flex flex-col">
-                    <span class="name-product font-Primary-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="name-product font-Primary-bold text-[#505887] text-xl">Image
+                      Test</span>
                     <span class="time-upload font-Primary-medium text-[#718EBF] text-xl">4 Sep,
                       10:23pm</span>
                   </div>
-                  <span class="size-image font-Primary-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                  <span class="size-image font-Primary-medium text-[#718EBF] text-xl">12 MB</span>
                 </div>
               </div>
               <div class="detail-recently-uploaded-section px-5 border-4 rounded-xl border-white
@@ -226,11 +236,12 @@
                     <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
                   </div>
                   <div class="product-infor w-1/2 flex flex-col">
-                    <span class="name-product font-Primary-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="name-product font-Primary-bold text-[#505887] text-xl">Image
+                      Test</span>
                     <span class="time-upload font-Primary-medium text-[#718EBF] text-xl">4 Sep,
                       10:23pm</span>
                   </div>
-                  <span class="size-image font-Primary-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                  <span class="size-image font-Primary-medium text-[#718EBF] text-xl">12 MB</span>
                 </div>
               </div>
               <div class="detail-recently-uploaded-section px-5 border-4 rounded-xl border-white
@@ -240,11 +251,12 @@
                     <img src="/src/assets/images/iphone14_pro_max.jpg" class="w-[44px] h-[44px]">
                   </div>
                   <div class="product-infor w-1/2 flex flex-col">
-                    <span class="name-product font-Primary-bold font-semibold text-[#505887] text-xl">Image Test</span>
+                    <span class="name-product font-Primary-bold text-[#505887] text-xl">Image
+                      Test</span>
                     <span class="time-upload font-Primary-medium text-[#718EBF] text-xl">4 Sep,
                       10:23pm</span>
                   </div>
-                  <span class="size-image font-Primary-bold font-semibold text-[#718EBF] text-xl">12 MB</span>
+                  <span class="size-image font-Primary-medium text-[#718EBF] text-xl">12 MB</span>
                 </div>
               </div>
             </div>
