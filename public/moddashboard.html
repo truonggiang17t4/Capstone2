@@ -574,6 +574,202 @@
 
               </table>
               <!-- End the table database -->
+
+
+              <!-- Add modal form -->
+              <div class="add-modal-form relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+                <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+                <div class="fixed inset-0 z-10 overflow-y-auto">
+                  <div class="flex min-h-full justify-center text-center items-start pt-20">
+                    <div
+                      class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-1/2">
+                      <div class="bg-white px-4 pt-5 flex flex-col justify-center">
+                        <div class="flex w-full justify-center">
+                          <div class="mt-3 text-center">
+                            <h3 class="text-lg font-Primary-bold uppercase text-gray-900" id="modal-title">
+                              Add new account</h3>
+                            <form
+                              class="flex flex-col border-2 rounded-sm border-blue-500 p-5 items-start justify-between gap-5 w-[500px] my-8">
+                              <!-- The image field -->
+                              <label htmlFor="user" class="image-label flex w-full justify-between">
+                                Image
+                                <div class="flex flex-col w-[80%] items-start">
+                                  <img
+                                    class="w-[200px] h-[200px] px-4 py-1 text-xl font-Primary-medium bg-[#D9D9D9] rounded-sm" />
+                                  <button type="button"
+                                    class="border border-slate-500 p-2 mt-2 rounded-lg text-sm">Upload
+                                    Image</button>
+                                </div>
+                              </label>
+
+                              <!-- The name product field -->
+                              <label htmlFor="name-product"
+                                class="name-product-label flex w-full justify-between items-center">
+                                Name
+                                <input type="text" id="name-product"
+                                  class="w-[80%] px-4 py-1 text-xl font-Primary-medium outline-none placeholder-slate-800 bg-[#D9D9D9] rounded-sm"
+                                  required />
+                              </label>
+
+                              <!-- The link product field -->
+                              <label htmlFor="link product"
+                                class="link-product-label flex w-full justify-between items-center">
+                                Link
+                                <input type="url" id="link-product"
+                                  class="w-[80%] px-4 py-1 text-xl font-Primary-medium outline-none placeholder-slate-800 bg-[#D9D9D9] rounded-sm"
+                                  required />
+                              </label>
+
+                              <!-- The price product field -->
+                              <label htmlFor="price-product"
+                                class="price-product-label flex w-full justify-between items-center">
+                                Price
+                                <input type="number" id="price-product"
+                                  class="w-[80%] px-4 py-1 text-xl font-Primary-medium outline-none placeholder-slate-800 bg-[#D9D9D9] rounded-sm"
+                                  required min="0" />
+                              </label>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-gray-50 py-3 flex justify-between px-6">
+                        <button type="button"
+                          class="inline-flex items-center w-[85px] h-[40px] justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                          Add
+                        </button>
+                        <button type="button"
+                          class="inline-flex items-center w-[85px] h-[40px] justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End the Add modal form -->
+
+              <!-- Edit modal form -->
+              <div class="edit-modal-form relative z-10 opacity-0" aria-labelledby="modal-title" role="dialog"
+                aria-modal="true">
+                <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+                <div class="fixed inset-0 z-10 overflow-y-auto">
+                  <div class="flex min-h-full justify-center text-center items-start pt-20">
+                    <div
+                      class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-1/2">
+                      <div class="bg-white px-4 pt-5 flex flex-col justify-center">
+                        <div class="flex w-full justify-center">
+                          <div class="mt-3 text-center">
+                            <h3 class="text-lg font-Primary-bold uppercase text-gray-900" id="modal-title">
+                              Edit the product</h3>
+                            <form
+                              class="flex flex-col border-2 rounded-sm border-green-600 p-5 items-start justify-between gap-5 w-[500px] my-8">
+                              <!-- The image field -->
+                              <label htmlFor="user" class="image-label flex w-full justify-between">
+                                Image
+                                <div class="flex flex-col w-[80%] items-start">
+                                  <img
+                                    class="w-[200px] h-[200px] px-4 py-1 text-xl font-Primary-medium bg-[#D9D9D9] rounded-sm" />
+                                  <button type="button"
+                                    class="border border-slate-500 p-2 mt-2 rounded-lg text-sm">Upload
+                                    Image</button>
+                                </div>
+                              </label>
+
+                              <!-- The name product field -->
+                              <label htmlFor="name-product"
+                                class="name-product-label flex w-full justify-between items-center">
+                                Name
+                                <input type="text" id="name-product"
+                                  class="w-[80%] px-4 py-1 text-xl font-Primary-medium outline-none placeholder-slate-800 bg-[#D9D9D9] rounded-sm"
+                                  required />
+                              </label>
+
+                              <!-- The link product field -->
+                              <label htmlFor="link product"
+                                class="link-product-label flex w-full justify-between items-center">
+                                Link
+                                <input type="url" id="link-product"
+                                  class="w-[80%] px-4 py-1 text-xl font-Primary-medium outline-none placeholder-slate-800 bg-[#D9D9D9] rounded-sm"
+                                  required />
+                              </label>
+
+                              <!-- The price product field -->
+                              <label htmlFor="price-product"
+                                class="price-product-label flex w-full justify-between items-center">
+                                Price
+                                <input type="number" id="price-product"
+                                  class="w-[80%] px-4 py-1 text-xl font-Primary-medium outline-none placeholder-slate-800 bg-[#D9D9D9] rounded-sm"
+                                  required min="0" />
+                              </label>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-gray-50 py-3 flex justify-between px-6">
+                        <button type="button"
+                          class="inline-flex items-center w-[85px] h-[40px] justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                          Edit
+                        </button>
+                        <button type="button"
+                          class="inline-flex items-center w-[85px] h-[40px] justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End the Edit modal form -->
+
+              <!-- Delete modal form -->
+              <!-- <div class="delete-modal-form relative z-10 opacity-0 hover:opacity-100" aria-labelledby="modal-title" role="dialog"
+                aria-modal="true">
+                <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+                <div class="fixed inset-0 z-10 overflow-y-auto">
+                  <div class="flex min-h-full justify-center text-center items-start pt-20">
+                    <div
+                      class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-1/3">
+                      <div class="bg-white px-4 pt-5 pb-8 flex flex-col justify-center">
+                        <div class="flex w-full justify-center">
+                          <div class="mt-3 text-center">
+                            <h3 class="text-lg font-Primary-bold uppercase text-gray-900" id="modal-title">
+                              Delete the product</h3>
+                            <div
+                              class="mx-auto flex h-20 w-20 my-4 items-center justify-center rounded-full bg-red-100">
+                              <svg class="w-14 h-14 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M12 10.5v3.75m-9.303 3.376C1.83 19.126 2.914 21 4.645 21h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 4.88c-.866-1.501-3.032-1.501-3.898 0L2.697 17.626zM12 17.25h.007v.008H12v-.008z" />
+                              </svg>
+                            </div>
+                            <div class="mt-2">
+                              <p class="text-base text-gray-500">Are you sure you want to delete this product ?
+                                <br>
+                                This action cannot be undone.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-gray-50 py-3 flex justify-between px-6">
+                        <button type="button"
+                          class="inline-flex items-center w-[85px] h-[40px] justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+                          Delete
+                        </button>
+                        <button type="button"
+                          class="inline-flex items-center w-[85px] h-[40px] justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- End the Delete modal form -->
+
             </div>
 
             <!--Pagination section-->
