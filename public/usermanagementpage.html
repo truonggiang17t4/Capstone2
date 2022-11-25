@@ -99,7 +99,7 @@
           <div class="w-full flex justify-between items-center">
 
             <!-- Searchbar section -->
-            <div class="searchbar w-[65%] justify-center items-center border-4 border-[#F0F0F0] rounded-xl p-3">
+            <div class="searchbar w-3/4 justify-center items-center border-4 border-[#F0F0F0] rounded-xl p-3">
               <form class="flex items-center">
                 <!-- Search button -->
                 <button type="submit" class="mr-3">
@@ -128,14 +128,6 @@
               </button>
               <!-- End add new button -->
 
-              <!-- Delete All button -->
-              <button type="button" class="add-new-button w-[150px] h-[60px] font-Primary-bold font-medium text-lg flex justify-center
-            items-center border-2 bg-[#51459E] p-5 rounded-[10px] text-[#DEE1E6]
-            hover:bg-[#DEE1E6] hover:text-[#51459E] hover:border-[#51459E]
-            transition-all duration-500 ease-in-out uppercase">
-                Delete All
-              </button>
-              <!-- End Delete All button -->
             </div>
           </div>
           <!-- End the searchbar and group button section wrapper -->
@@ -150,15 +142,10 @@
                 <!-- Table head -->
                 <thead class="w-full">
                   <tr class="w-full flex justify-between items-center px-2">
-                    <th class="w-[50px]">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </th>
                     <th class="w-[200px] flex justify-start">User</th>
                     <th class="w-[200px] flex justify-start">Phone</th>
                     <th class="w-[300px] flex justify-start">Email</th>
-                    <th class="w-[100px] flex justify-start">Status</th>
+                    <th class="w-[100px] flex justify-start">Role</th>
                     <th class="w-[100px] flex justify-start">Action</th>
                   </tr>
                 </thead>
@@ -170,12 +157,6 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                   hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
                     <td class="w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
@@ -190,9 +171,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
@@ -208,12 +189,6 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                                     hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
                     <td class="w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
@@ -228,9 +203,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
@@ -246,13 +221,8 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                                     hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
-                    <td class="w-[200px] flex justify-start items-center gap-4">
+                    <td class="
+                    w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
                       </div>
@@ -266,9 +236,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
@@ -284,12 +254,6 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                                     hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
                     <td class="w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
@@ -304,9 +268,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
@@ -322,12 +286,6 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                                     hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
                     <td class="w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
@@ -342,9 +300,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
@@ -360,12 +318,6 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                                     hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
                     <td class="w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
@@ -380,9 +332,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
@@ -398,12 +350,6 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                                     hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
                     <td class="w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
@@ -418,9 +364,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
@@ -436,12 +382,6 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                                     hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
                     <td class="w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
@@ -456,9 +396,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
@@ -474,12 +414,6 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                                     hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
                     <td class="w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
@@ -494,9 +428,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
@@ -512,12 +446,6 @@
                   <!-- Render table body here -->
                   <tr class="w-full flex justify-between items-center px-2 border-2 border-gray-300 my-4 rounded-lg
                                     hover:border-red-400 transition-all duration-500 ease-in-out">
-                    <td class="w-[50px] flex justify-center">
-                      <form action="" class="flex items-center justify-center">
-                        <input type="checkbox" id="" name="" value="" class="w-[25px] h-[25px]">
-                      </form>
-                    </td>
-
                     <td class="w-[200px] flex justify-start items-center gap-4">
                       <div class="w-1/2 h-fit border border-gray-400 rounded-lg overflow-hidden block">
                         <img src="../src/assets/images/cat.jpg" class="w-full h-fit">
@@ -532,9 +460,9 @@
                       useremail123@gmail.com
                     </td>
                     <td class="w-[100px] h-full block font-Primary-medium text-lg truncate">
-                      Action
+                      Admin
                     </td>
-                    <td class="w-[100px] flex justify-center">
+                    <td class="w-[100px] flex justify-start">
                       <div class="group-button flex gap-5 text-xl">
                         <button type="button" class="edit-button">
                           <i class="fa-regular fa-pen-to-square text-green-500"></i>
