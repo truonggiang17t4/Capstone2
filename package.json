@@ -6,17 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "json-server --watch db.json",
-    "dev": "parcel ./public/homepage.html",
+    "dev": "parcel ./public/resultspage.html",
     "build": "npx tailwindcss -i ./src/styles/index.css -o ./public/main.css --watch",
     "prettier": "prettier --check \"src/**(**.jsx|*.js|*.scss|*.css)\"",
     "prettier:fix": "prettier --write \"src/**(**.jsx|*.js|*.scss|*.css)\""
   },
   "dependencies": {
     "parcel": "^2.8.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",
-    "tailwindcss": "^3.2.0"
+    "tailwindcss": "^3.2.4"
   }
 }

@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'OpenSans-Regular';
+  font-family: 'Primary-Regular';
   src: url(../src/assets/fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'OpenSans-Medium';
+  font-family: 'Primary-Medium';
   src: url(../src/assets/fonts/OpenSans-Medium.ttf);
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
+  font-family: 'Primary-Bold';
   src: url(../src/assets/fonts/OpenSans-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'OpenSans-Light';
+  font-family: 'Primary-Light';
   src: url(../src/assets/fonts/OpenSans-Light.ttf);
 }

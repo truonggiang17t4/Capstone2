@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-  <link rel="stylesheet" href="main.css">
+  <link href="/public/main.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Image Search Engine</title>
 </head>
 
 <body>
-  <div class="wrapper w-[1500px] m-auto p-[25px] bg-[#F6FAFF] flex font-Primary-regular">
+  <div class="wrapper w-[1500px] m-0 mx-auto p-[25px] bg-[#F6FAFF] flex font-Primary-regular">
     <!-- Container -->
     <div class="container bg-white">
 
@@ -123,422 +123,242 @@
             <div class="render-product-card flex flex-wrap gap-8 justify-start">
 
               <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-              hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
+              <div id="product-card">
+                <div class="product-card rounded-2xl overflow-hidden border-2 border-[#51459E]">
 
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
+                  <!-- Product image card -->
                   <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
+                    class="group w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 relative">
+                    <div>
+                      <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
+                    </div>
+                    <div
+                      class="overlay-content p-2 bg-slate-100 absolute w-full h-full top-0 z-10 duration-700 ease-in-out translate-x-full group-hover:translate-x-0">
+                      <p
+                        class="line-clamp-5 text-base font-Primary-bold text-[#51459E] mb-2 border-b-2 border-red-500 border-dashed">
+                        COOSEON 4 Liter/6 Can Mini Skincare Fridge with Mirror, AC/DC Thermoelectric Cooler Beauty
+                        Fridge,
+                        Warmer Refrigerators for Skin Care Makeup, Cosmetics, Beverage, Babyfood, Bedroom, Car use</p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Likes:
+                        <span class="text-[#51459E]">3450 <i class="fa-regular fa-thumbs-up text-blue-500"></i></span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Discount: <span
+                          class="text-[#51459E]">20
+                          <i class="fa-solid fa-percent"></i></span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Quantity Sold:
+                        <span class="text-[#51459E]">255</span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Review Count:
+                        <span class="text-[#51459E]">4/5 <i class="fa-solid fa-star text-yellow-500"></i></span>
+                      </p>
+                    </div>
+                    <div
+                      class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
+                      <span
+                        class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out cursor-pointer">Shopee.vn</span>
+                    </div>
+
                   </div>
-                </div>
-                <!-- End the product image card -->
+                  <!-- End the product image card -->
 
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
+                  <!-- Product card detail -->
+                  <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
 
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
+                    <!-- Product card infor -->
+                    <div class="product-card-infor w-10/12 flex flex-col">
+                      <span
+                        class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
+                        Refrigerator</span>
+                      <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
+                    </div>
+                    <!-- End the product card infor -->
+
+                    <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl cursor-pointer"></i>
                   </div>
-                  <!-- End the product card infor -->
+                  <!-- End the product card detail -->
 
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
                 </div>
-                <!-- End the product card detail -->
-
               </div>
               <!-- End the product card -->
 
               <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-                            hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
+              <div id="product-card">
+                <div class="product-card rounded-2xl overflow-hidden border-2 border-[#51459E]">
 
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
+                  <!-- Product image card -->
                   <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
+                    class="group w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 relative">
+                    <div>
+                      <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
+                    </div>
+                    <div
+                      class="overlay-content p-2 bg-slate-100 absolute w-full h-full top-0 z-10 duration-700 ease-in-out translate-x-full group-hover:translate-x-0">
+                      <p
+                        class="line-clamp-5 text-base font-Primary-bold text-[#51459E] mb-2 border-b-2 border-red-500 border-dashed">
+                        COOSEON 4 Liter/6 Can Mini Skincare Fridge with Mirror, AC/DC Thermoelectric Cooler Beauty
+                        Fridge,
+                        Warmer Refrigerators for Skin Care Makeup, Cosmetics, Beverage, Babyfood, Bedroom, Car use</p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Likes:
+                        <span class="text-[#51459E]">3450 <i class="fa-regular fa-thumbs-up text-blue-500"></i></span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Discount: <span
+                          class="text-[#51459E]">20
+                          <i class="fa-solid fa-percent"></i></span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Quantity Sold:
+                        <span class="text-[#51459E]">255</span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Review Count:
+                        <span class="text-[#51459E]">4/5 <i class="fa-solid fa-star text-yellow-500"></i></span>
+                      </p>
+                    </div>
+                    <div
+                      class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
+                      <span
+                        class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out cursor-pointer">Shopee.vn</span>
+                    </div>
+
                   </div>
-                </div>
-                <!-- End the product image card -->
+                  <!-- End the product image card -->
 
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
+                  <!-- Product card detail -->
+                  <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
 
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
+                    <!-- Product card infor -->
+                    <div class="product-card-infor w-10/12 flex flex-col">
+                      <span
+                        class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
+                        Refrigerator</span>
+                      <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
+                    </div>
+                    <!-- End the product card infor -->
+
+                    <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl cursor-pointer"></i>
                   </div>
-                  <!-- End the product card infor -->
+                  <!-- End the product card detail -->
 
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
                 </div>
-                <!-- End the product card detail -->
-
               </div>
               <!-- End the product card -->
 
               <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-              hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
+              <div id="product-card">
+                <div class="product-card rounded-2xl overflow-hidden border-2 border-[#51459E]">
 
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
+                  <!-- Product image card -->
                   <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
+                    class="group w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 relative">
+                    <div>
+                      <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
+                    </div>
+                    <div
+                      class="overlay-content p-2 bg-slate-100 absolute w-full h-full top-0 z-10 duration-700 ease-in-out translate-x-full group-hover:translate-x-0">
+                      <p
+                        class="line-clamp-5 text-base font-Primary-bold text-[#51459E] mb-2 border-b-2 border-red-500 border-dashed">
+                        COOSEON 4 Liter/6 Can Mini Skincare Fridge with Mirror, AC/DC Thermoelectric Cooler Beauty
+                        Fridge,
+                        Warmer Refrigerators for Skin Care Makeup, Cosmetics, Beverage, Babyfood, Bedroom, Car use</p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Likes:
+                        <span class="text-[#51459E]">3450 <i class="fa-regular fa-thumbs-up text-blue-500"></i></span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Discount: <span
+                          class="text-[#51459E]">20
+                          <i class="fa-solid fa-percent"></i></span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Quantity Sold:
+                        <span class="text-[#51459E]">255</span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Review Count:
+                        <span class="text-[#51459E]">4/5 <i class="fa-solid fa-star text-yellow-500"></i></span>
+                      </p>
+                    </div>
+                    <div
+                      class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
+                      <span
+                        class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out cursor-pointer">Shopee.vn</span>
+                    </div>
+
                   </div>
-                </div>
-                <!-- End the product image card -->
+                  <!-- End the product image card -->
 
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
+                  <!-- Product card detail -->
+                  <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
 
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
+                    <!-- Product card infor -->
+                    <div class="product-card-infor w-10/12 flex flex-col">
+                      <span
+                        class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
+                        Refrigerator</span>
+                      <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
+                    </div>
+                    <!-- End the product card infor -->
+
+                    <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl cursor-pointer"></i>
                   </div>
-                  <!-- End the product card infor -->
+                  <!-- End the product card detail -->
 
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
                 </div>
-                <!-- End the product card detail -->
-
               </div>
               <!-- End the product card -->
 
               <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-                            hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
+              <div id="product-card">
+                <div class="product-card rounded-2xl overflow-hidden border-2 border-[#51459E]">
 
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
+                  <!-- Product image card -->
                   <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
+                    class="group w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 relative">
+                    <div>
+                      <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
+                    </div>
+                    <div
+                      class="overlay-content p-2 bg-slate-100 absolute w-full h-full top-0 z-10 duration-700 ease-in-out translate-x-full group-hover:translate-x-0">
+                      <p
+                        class="line-clamp-5 text-base font-Primary-bold text-[#51459E] mb-2 border-b-2 border-red-500 border-dashed">
+                        COOSEON 4 Liter/6 Can Mini Skincare Fridge with Mirror, AC/DC Thermoelectric Cooler Beauty
+                        Fridge,
+                        Warmer Refrigerators for Skin Care Makeup, Cosmetics, Beverage, Babyfood, Bedroom, Car use</p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Likes:
+                        <span class="text-[#51459E]">3450 <i class="fa-regular fa-thumbs-up text-blue-500"></i></span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Discount: <span
+                          class="text-[#51459E]">20
+                          <i class="fa-solid fa-percent"></i></span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Quantity Sold:
+                        <span class="text-[#51459E]">255</span>
+                      </p>
+                      <p class="flex w-full justify-between font-Primary-bold text-base text-red-500">Review Count:
+                        <span class="text-[#51459E]">4/5 <i class="fa-solid fa-star text-yellow-500"></i></span>
+                      </p>
+                    </div>
+                    <div
+                      class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
+                      <span
+                        class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out cursor-pointer">Shopee.vn</span>
+                    </div>
+
                   </div>
-                </div>
-                <!-- End the product image card -->
+                  <!-- End the product image card -->
 
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
+                  <!-- Product card detail -->
+                  <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
 
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
+                    <!-- Product card infor -->
+                    <div class="product-card-infor w-10/12 flex flex-col">
+                      <span
+                        class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
+                        Refrigerator</span>
+                      <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
+                    </div>
+                    <!-- End the product card infor -->
+
+                    <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl cursor-pointer"></i>
                   </div>
-                  <!-- End the product card infor -->
+                  <!-- End the product card detail -->
 
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
                 </div>
-                <!-- End the product card detail -->
-
-              </div>
-              <!-- End the product card -->
-
-              <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-              hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
-
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
-                  <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
-                  </div>
-                </div>
-                <!-- End the product image card -->
-
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
-
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
-                  </div>
-                  <!-- End the product card infor -->
-
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
-                </div>
-                <!-- End the product card detail -->
-
-              </div>
-              <!-- End the product card -->
-
-              <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-                            hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
-
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
-                  <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
-                  </div>
-                </div>
-                <!-- End the product image card -->
-
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
-
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
-                  </div>
-                  <!-- End the product card infor -->
-
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
-                </div>
-                <!-- End the product card detail -->
-
-              </div>
-              <!-- End the product card -->
-
-              <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-              hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
-
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
-                  <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
-                  </div>
-                </div>
-                <!-- End the product image card -->
-
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
-
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
-                  </div>
-                  <!-- End the product card infor -->
-
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
-                </div>
-                <!-- End the product card detail -->
-
-              </div>
-              <!-- End the product card -->
-
-              <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-                            hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
-
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
-                  <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
-                  </div>
-                </div>
-                <!-- End the product image card -->
-
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
-
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
-                  </div>
-                  <!-- End the product card infor -->
-
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
-                </div>
-                <!-- End the product card detail -->
-
-              </div>
-              <!-- End the product card -->
-
-              <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-              hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
-
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
-                  <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
-                  </div>
-                </div>
-                <!-- End the product image card -->
-
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
-
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
-                  </div>
-                  <!-- End the product card infor -->
-
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
-                </div>
-                <!-- End the product card detail -->
-
-              </div>
-              <!-- End the product card -->
-
-              <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-                            hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
-
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
-                  <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
-                  </div>
-                </div>
-                <!-- End the product image card -->
-
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
-
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
-                  </div>
-                  <!-- End the product card infor -->
-
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
-                </div>
-                <!-- End the product card detail -->
-
-              </div>
-              <!-- End the product card -->
-
-              <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-              hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
-
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
-                  <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
-                  </div>
-                </div>
-                <!-- End the product image card -->
-
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
-
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
-                  </div>
-                  <!-- End the product card infor -->
-
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
-                </div>
-                <!-- End the product card detail -->
-
-              </div>
-              <!-- End the product card -->
-
-              <!-- Product card -->
-              <div class="product-card mb-4 transition-all duration-300 ease-in-out
-                            hover:scale-105 rounded-2xl overflow-hidden border-2 border-[#51459E]">
-
-                <!-- Product image card -->
-                <div
-                  class="w-[250px] flex flex-col justify-center items-center mb-3 border-b border-gray-400 overflow-hidden relative">
-                  <img src="/src/assets/images/Mini_fridge.jpg" class="w-full">
-                  <div
-                    class="w-[250px] flex justify-center items-center bg-white border border-[#51459E] absolute bottom-0">
-                    <span
-                      class="w-full h-full px-2 block text-center truncate text-xl font-Primary-bold text-red-600 transition-all duration-500 ease-in-out">Shopee.vn</span>
-                  </div>
-                </div>
-                <!-- End the product image card -->
-
-                <!-- Product card detail -->
-                <div class="product-card-detail flex w-[250px] justify-between px-2 mb-2">
-
-                  <!-- Product card infor -->
-                  <div class="product-card-infor w-10/12 flex flex-col">
-                    <span
-                      class="product-card-name w-full h-full block font-Primary-medium text-lg truncate text-[#51459E]">Mini
-                      Refrigerator</span>
-                    <span class="product-card-price font-Primary-bold text-red-500 text-lg">180,000đ</span>
-                  </div>
-                  <!-- End the product card infor -->
-
-                  <i class="fa-solid fa-heart text-gray-400 hover:text-red-600 text-3xl"></i>
-                </div>
-                <!-- End the product card detail -->
-
               </div>
               <!-- End the product card -->
 
@@ -594,6 +414,26 @@
       <!-- End the page content -->
 
       <script type=" module" src="../src/javascript/main.js"></script>
+      <script>
+        // const moreInformation = document.querySelector(".more-infor-2")
+        // const moreInformationRight = document.querySelector(".more-infor-4")
+        // function showMoreInfor() {
+        //   moreInformation.style.visibility = "visible";
+        //   moreInformation.classList.add("translate-x-4")
+        // }
+        // function hideMoreInfor() {
+        //   moreInformation.style.visibility = "hidden";
+        //   moreInformation.classList.remove("translate-x-4");
+        // }
+        // function showMoreInforRight() {
+        //   moreInformationRight.style.visibility = "visible";
+        //   moreInformationRight.classList.add("-translate-x-4")
+        // }
+        // function hideMoreInforRight() {
+        //   moreInformationRight.style.visibility = "hidden";
+        //   moreInformationRight.classList.remove("-translate-x-4");
+        // }
+      </script>
 </body>
 
 </html>

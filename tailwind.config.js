@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./public/index.html', './src/**/*.{html,js}'],
+  content: [
+    './public/**/*.{html,js}',
+    './src/**/*.{html,js}',
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -9,7 +12,20 @@ module.exports = {
         'Primary-bold': ['Primary-Bold'],
         'Primary-light': ['Primary-Light'],
       },
+      lineClamp: {
+        7: '7',
+        8: '8',
+        9: '9',
+        10: '10',
+      },
     },
   },
-  plugins: [require('@tailwindcss/line-clamp')],
+  variants: {
+    opacity: ['hover', 'active', 'group-hover'],
+    lineClamp: ['responsive', 'hover'],
+  },
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+    require('tailwind-scrollbar-hide'),
+  ],
 };
